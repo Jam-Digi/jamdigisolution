@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — JAM Digi Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --orange: #FF5E00; --violet-dark: #0F0826; --violet-card: #180D38;
+      --white: #FFFFFF; --white-dim: rgba(255, 255, 255, 0.75); --border: rgba(255, 255, 255, 0.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--violet-dark); color: var(--white); font-family: 'Plus Jakarta Sans', sans-serif; }
+    header { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(15,8,38,0.9); border-bottom: 1px solid var(--border); }
+    .nav-wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; height: 90px; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 12px; font-size: 22px; font-weight: 800; }
+    .brand-logo { width: 44px; height: 44px; background: var(--orange); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { color: var(--white-dim); text-decoration: none; font-weight: 600; }
+    .nav-links a.active { color: var(--orange); }
+
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 150px 24px 80px; }
+    .title { text-align: center; margin-bottom: 60px; }
+    .title h1 { font-size: 48px; font-weight: 800; margin-bottom: 16px; }
+
+    .service-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;
+      margin-bottom: 80px; background: var(--violet-card); border: 1px solid var(--border);
+      border-radius: 24px; padding: 40px; overflow: hidden;
+    }
+    .service-row img { width: 100%; height: 350px; object-fit: cover; border-radius: 16px; }
+    .service-row h2 { font-size: 32px; color: var(--orange); margin-bottom: 16px; }
+    .service-row p { color: var(--white-dim); font-size: 16px; margin-bottom: 24px; }
+    .btn-orange { background: var(--orange); color: #fff; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-weight: 700; display: inline-block; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav-wrap">
+    <div class="brand"><div class="brand-logo">JD</div> JAM Digi Solutions</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="work.html">Client Work</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="title">
+    <h1>High-Impact Growth Solutions</h1>
+    <p style="color:var(--white-dim);">Precision-engineered services to dominate your target market.</p>
+  </div>
+
+  <div class="service-row">
+    <div>
+      <h2>01. Dynamic Paid Advertising</h2>
+      <p>Targeted Google Ads & Meta Campaigns designed to maximize conversion and generate consistent inbound leads for local and scale-up businesses.</p>
+      <a href="contact.html" class="btn-orange">Scale Your Ads</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=800&q=80" alt="Paid Ads">
+  </div>
+
+  <div class="service-row">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="SEO Architecture">
+    <div>
+      <h2>02. Local SEO & Market Dominance</h2>
+      <p>Own the top rank on Google Maps and organic searches. We ensure your business is the #1 choice when local customers search for your services.</p>
+      <a href="contact.html" class="btn-orange">Boost Search Rank</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
